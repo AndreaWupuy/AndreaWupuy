@@ -1,4 +1,4 @@
-Hi there, my name is Andrea Wupuy, I'm currently persuing my MBA and will start my Master in Business Analytics (MBAN) in August 2023.
+Hi there, my name is Andrea Wupuy, I'm currently persuing my MBA and will start my Master in Business Analytics in August 2023.
 	• 🌎 I'm based in Boston, Massachussets
 	• 👀 I’m interested in solving business cases through data
 	• 💻 Currently learning SQL and PowerBi
