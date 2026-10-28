@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/*
+  Paleta "al toque": base clara tipo app + neones de los carteles chicha.
+  Regla: sobre cualquier color neón el texto siempre es negro (#111111).
+*/
+@theme {
+  --color-fondo: #eceae6;
+  --color-tinta: #111111;
+  --color-tinta-suave: #55524c;
+  --color-borde: #dcd8d1;
+  --color-amarillo: #ffe600;
+  --color-fucsia: #ff2e88;
+  --color-verde: #39e75f;
+  --color-naranja: #ff7a00;
+  --color-celeste: #00c2e0;
+
+  --radius-tarjeta: 24px;
+}
+
+/* "inline" porque las fuentes llegan como variables desde next/font en <body> */
+@theme inline {
+  --font-titulo: var(--font-shrikhand), "Georgia", serif;
+  --font-etiqueta: var(--font-bungee), "Arial Black", sans-serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: var(--color-fondo);
+  color: var(--color-tinta);
+}
+
+body {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Foco visible para teclado en todo elemento interactivo */
+:focus-visible {
+  outline: 3px solid var(--color-tinta);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
